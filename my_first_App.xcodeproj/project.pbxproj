@@ -15,10 +15,6 @@
 		B8C304C7286B405E00A489C8 /* my_first_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C3049E286B405700A489C8 /* my_first_AppApp.swift */; };
 		B8C304C8286B405E00A489C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C3049F286B405700A489C8 /* ContentView.swift */; };
 		B8C304C9286B405E00A489C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C3049F286B405700A489C8 /* ContentView.swift */; };
-		B8C304CA286B405E00A489C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C304A0286B405D00A489C8 /* Assets.xcassets */; };
-		B8C304CB286B405E00A489C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C304A0286B405D00A489C8 /* Assets.xcassets */; };
-		B8C304FB286C457F00A489C8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C304FA286C457F00A489C8 /* CircleImage.swift */; };
-		B8C304FC286C457F00A489C8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C304FA286C457F00A489C8 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +37,6 @@
 /* Begin PBXFileReference section */
 		B8C3049E286B405700A489C8 /* my_first_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_first_AppApp.swift; sourceTree = "<group>"; };
 		B8C3049F286B405700A489C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B8C304A0286B405D00A489C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8C304A5286B405D00A489C8 /* my_first_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_first_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C304AB286B405D00A489C8 /* my_first_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_first_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C304AD286B405D00A489C8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -51,7 +46,6 @@
 		B8C304BE286B405E00A489C8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C304C2286B405E00A489C8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B8C304C4286B405E00A489C8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		B8C304FA286C457F00A489C8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +96,6 @@
 			children = (
 				B8C3049E286B405700A489C8 /* my_first_AppApp.swift */,
 				B8C3049F286B405700A489C8 /* ContentView.swift */,
-				B8C304FA286C457F00A489C8 /* CircleImage.swift */,
-				B8C304A0286B405D00A489C8 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -270,7 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C304CA286B405E00A489C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C304CB286B405E00A489C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +295,6 @@
 			files = (
 				B8C304C8286B405E00A489C8 /* ContentView.swift in Sources */,
 				B8C304C6286B405E00A489C8 /* my_first_AppApp.swift in Sources */,
-				B8C304FB286C457F00A489C8 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +304,6 @@
 			files = (
 				B8C304C9286B405E00A489C8 /* ContentView.swift in Sources */,
 				B8C304C7286B405E00A489C8 /* my_first_AppApp.swift in Sources */,
-				B8C304FC286C457F00A489C8 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
