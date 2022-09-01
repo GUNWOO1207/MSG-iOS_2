@@ -10,12 +10,13 @@ import UIKit
 // 범용성을 위해 class가 아닌 AnyObject로 선언해준다.
 protocol ContentsMainTextDelegate: AnyObject {
     // 위임해줄 기능
-    func categoryButtonTapped()
+    func categoryButtonTapped(index: Int)
 }
 
 class TableViewCell: UITableViewCell {
     
     weak var cellDelegate: ContentsMainTextDelegate?
+    var index: Int = 0
     
     var cellLable: UILabel = {
         let lable = UILabel()
@@ -54,7 +55,7 @@ class TableViewCell: UITableViewCell {
     // Cell에 추가 할 Label을 설정합니다.
     func labelSetting() {
         contentView.addSubview(self.cellLable)
-        contentView.addSubview(categoryButton)
+        contentView.addSubview(self.categoryButton)
         NSLayoutConstraint.activate([
             cellLable.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             cellLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
@@ -76,7 +77,8 @@ class TableViewCell: UITableViewCell {
     }
     
     @objc func categoryClicked() {
-            cellDelegate?.categoryButtonTapped()
+        
+        cellDelegate?.categoryButtonTapped(index: index + 1)
         }
 
 }

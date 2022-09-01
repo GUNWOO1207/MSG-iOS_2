@@ -14,16 +14,20 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell: TableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as?
                 TableViewCell else { return UITableViewCell()}
         cell.textLabel?.text = String(indexPath.row+1)
+        cell.index = indexPath.row
         cell.cellDelegate = self
         return cell
+        
     }
     
     var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        // 궁금한점. 왜? tableView 에 rowHeight를 하는가? Cell에다가 하는것도 가능? 보통 셀에다가 rowHeight라고 생각 할 텐데.
         tableView.rowHeight = 50
         return tableView
     }()
@@ -50,11 +54,22 @@ class MyViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.navigationItem.title = "TableView"
     }
     
+    
 }
 
-extension MyViewController: ContentsMainTextDelegate {
-    func categoryButtonTapped() {
+extension MyViewController: ContentsMainTextDelegate{
+    
+    func categoryButtonTapped(index: Int) {
+        
+        let PrintVC = PrintViewController()
+        
+        PrintVC.printLabel.text = String(index)
+        self.navigationController?.pushViewController(PrintVC, animated: true)
+        print(index)
+        
+        
         
     }
+
 }
 
